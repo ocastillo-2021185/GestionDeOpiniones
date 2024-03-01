@@ -1,0 +1,371 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GESTOR DE OPINIONES",
+    "dateExported": "2024-03-01T23:40:50.057Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "648fb7e9-fe2a-409d-a215-fd3e311d115a",
+            "name": "USER",
+            "containerId": "",
+            "created": "2024-02-29T23:58:57.696Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "ae3727cb-204a-404c-a690-3e9c7e04262c",
+            "name": "COMMENTS",
+            "containerId": "",
+            "created": "2024-02-29T23:58:57.697Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "83faf1f0-63aa-4284-a7dd-84b173a44ad6",
+            "name": "PUBLICATIONS",
+            "containerId": "",
+            "created": "2024-02-29T23:58:57.698Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "0633ee76-c1b6-4748-a409-87e0cf2490c2",
+            "name": "CATEGORIES",
+            "containerId": "",
+            "created": "2024-02-29T23:58:57.699Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "fd432712-02e2-4db4-9247-f017b3498136",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "648fb7e9-fe2a-409d-a215-fd3e311d115a",
+            "name": "SingUp",
+            "url": "user/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-29T23:58:57.696Z",
+            "modified": "2024-03-01T16:43:54.989Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Alex"
+                    },
+                    {
+                        "name": "username",
+                        "value": "acald"
+                    },
+                    {
+                        "name": "email",
+                        "value": "acald@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "70850fb3-8437-4ab4-a160-efcd39fd44ad",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "648fb7e9-fe2a-409d-a215-fd3e311d115a",
+            "name": "Login",
+            "url": "user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-29T23:58:57.697Z",
+            "modified": "2024-03-01T01:22:36.871Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "ocast@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "87654321"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "71154df7-cad0-4707-8a14-17a4ddfa64b8",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "648fb7e9-fe2a-409d-a215-fd3e311d115a",
+            "name": "Update",
+            "url": "user/edit/65dbe840af8a6fe5bf314e84",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-29T23:58:57.698Z",
+            "modified": "2024-03-01T01:16:17.977Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNWE4MzgyMzhhYzljYzc2YzI1MDAiLCJ1c2VybmFtZSI6Iml6emVsIiwiZW1haWwiOiJhc2RmQGdtYWlsLmNvbSIsIm5hbWUiOiJJenplbCIsImlhdCI6MTcwOTA3MzcyOSwiZXhwIjoxNzA5MDc3MzI5fQ.eQ1TNECcrixZqZ_0yxQ5LZK9K3zYvB0fY6It3_P6rd4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Alex"
+                    },
+                    {
+                        "name": "username",
+                        "value": "acald"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c0bfb0e-086c-4f6c-a354-49be9b5d6c92",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "648fb7e9-fe2a-409d-a215-fd3e311d115a",
+            "name": "UpdatePassw",
+            "url": "user/editPassword/65e11cd8dd23fb12420b81ad",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-29T23:58:57.699Z",
+            "modified": "2024-03-01T01:22:01.492Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWNkOGRkMjNmYjEyNDIwYjgxYWQiLCJ1c2VybmFtZSI6Im9jYXN0IiwiZW1haWwiOiJvY2FzdEBnbWFpbC5jb20iLCJuYW1lIjoib21hciIsImlhdCI6MTcwOTI1NjEwNSwiZXhwIjoxNzA5MjU5NzA1fQ.Ha2yvSmTOuyV4rUaJCeljkNGbg4z7TNLLFsmJjdHKVc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "oldPassword",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "87654321"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ad33cd1-a5fe-49ef-852b-cf3c96f6a01f",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "0633ee76-c1b6-4748-a409-87e0cf2490c2",
+            "name": "AddCategory",
+            "url": "category/add",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-29T23:58:57.700Z",
+            "modified": "2024-03-01T00:45:00.840Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Tec"
+                    },
+                    {
+                        "name": "description",
+                        "value": "We talk about technology"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "97f5e25d-7238-4b08-9785-967e5b14e7ec",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "83faf1f0-63aa-4284-a7dd-84b173a44ad6",
+            "name": "AddPublication",
+            "url": "publi/add",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-29T23:58:57.701Z",
+            "modified": "2024-03-01T23:36:06.223Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWNkOGRkMjNmYjEyNDIwYjgxYWQiLCJ1c2VybmFtZSI6Im9jYXN0IiwiZW1haWwiOiJvY2FzdEBnbWFpbC5jb20iLCJuYW1lIjoib21hciIsImlhdCI6MTcwOTMzNjE0NSwiZXhwIjoxNzA5MzQ2OTQ1fQ.xjuLw98iYg2nHayAltv3gZ0BvAlG3W55pS6_2rk47Ws"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Asus is the best brand"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Asus never stops making the best technollogy"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e1250cdd23fb12420b81c2"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "760f953f-68fb-4dd1-9f15-5e336dc80d80",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "83faf1f0-63aa-4284-a7dd-84b173a44ad6",
+            "name": "DeletePublication",
+            "url": "publi/delete/65e12ecbdd23fb12420b81cc",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-29T23:58:57.702Z",
+            "modified": "2024-03-01T01:27:25.301Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWNkOGRkMjNmYjEyNDIwYjgxYWQiLCJ1c2VybmFtZSI6Im9jYXN0IiwiZW1haWwiOiJvY2FzdEBnbWFpbC5jb20iLCJuYW1lIjoib21hciIsImlhdCI6MTcwOTI1NjE1NiwiZXhwIjoxNzA5MjU5NzU2fQ.EJj9tS_aLpOXZc6_JMdusAPs-laQ6MOOMCVFzLZx2co"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7157abbc-7058-4355-848a-84d5696ccac6",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "83faf1f0-63aa-4284-a7dd-84b173a44ad6",
+            "name": "UpdatePublicaton",
+            "url": "publi/update/65e12f1cdd23fb12420b81d6",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-02-29T23:58:57.703Z",
+            "modified": "2024-03-01T23:36:39.903Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWNkOGRkMjNmYjEyNDIwYjgxYWQiLCJ1c2VybmFtZSI6Im9jYXN0IiwiZW1haWwiOiJvY2FzdEBnbWFpbC5jb20iLCJuYW1lIjoib21hciIsImlhdCI6MTcwOTMzNjE0NSwiZXhwIjoxNzA5MzQ2OTQ1fQ.xjuLw98iYg2nHayAltv3gZ0BvAlG3W55pS6_2rk47Ws"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Asus is a really bad brand"
+                    },
+                    {
+                        "name": "description",
+                        "value": "All the stuff they sell is reallyyyy expensive"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc2282ff-24eb-4ab7-8aa0-560675fc6ae6",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "ae3727cb-204a-404c-a690-3e9c7e04262c",
+            "name": "AddComment",
+            "url": "comment/add",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-29T23:58:57.704Z",
+            "modified": "2024-03-01T00:24:24.832Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWNkOGRkMjNmYjEyNDIwYjgxYWQiLCJ1c2VybmFtZSI6Im9jYXN0IiwiZW1haWwiOiJvY2FzdEBnbWFpbC5jb20iLCJuYW1lIjoib21hciIsImlhdCI6MTcwOTI1MTgyNywiZXhwIjoxNzA5MjU1NDI3fQ.6Ji9VZ2iFiIe07qF5WQE9PAa_NI39LYU5I9F1h3nuN8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e11cd8dd23fb12420b81ad"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Comment1"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7006c398-903c-449e-bf4e-03e2d9c7519a",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "ae3727cb-204a-404c-a690-3e9c7e04262c",
+            "name": "UpdateComment",
+            "url": "comment/update/65e12038dd23fb12420b81b9",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-02-29T23:58:57.705Z",
+            "modified": "2024-03-01T23:34:59.635Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWNkOGRkMjNmYjEyNDIwYjgxYWQiLCJ1c2VybmFtZSI6Im9jYXN0IiwiZW1haWwiOiJvY2FzdEBnbWFpbC5jb20iLCJuYW1lIjoib21hciIsImlhdCI6MTcwOTI1MTgyNywiZXhwIjoxNzA5MjU1NDI3fQ.6Ji9VZ2iFiIe07qF5WQE9PAa_NI39LYU5I9F1h3nuN8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "Solsen?"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5c204cdb-81ca-498c-b7d0-ba587f2d4766",
+            "colId": "fe8c6494-873c-4c82-8921-e93760a35f08",
+            "containerId": "ae3727cb-204a-404c-a690-3e9c7e04262c",
+            "name": "DeleteComment",
+            "url": "comment/delete/65e12038dd23fb12420b81b9",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-02-29T23:58:57.706Z",
+            "modified": "2024-03-01T00:25:14.564Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWNkOGRkMjNmYjEyNDIwYjgxYWQiLCJ1c2VybmFtZSI6Im9jYXN0IiwiZW1haWwiOiJvY2FzdEBnbWFpbC5jb20iLCJuYW1lIjoib21hciIsImlhdCI6MTcwOTI1MTgyNywiZXhwIjoxNzA5MjU1NDI3fQ.6Ji9VZ2iFiIe07qF5WQE9PAa_NI39LYU5I9F1h3nuN8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3656/"
+        }
+    }
+}
